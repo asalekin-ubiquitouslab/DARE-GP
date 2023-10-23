@@ -619,6 +619,7 @@ def make_train_step(model, X_train,Y_train,loss_fnc, optimizer):
 # LSTM classifier - Gao, et. al. 2022 
 #
 ###################################################################
+"""
 if not f'{os.getcwd()}/../models/Ser_LSTM' in sys.path:
     sys.path.append(f'{os.getcwd()}/../models/Ser_LSTM')
 
@@ -658,7 +659,7 @@ class LSTMDOER:
         return predictions
 
 models["GAO_LSTM"] = LSTMDOER()
-
+"""
 
 #########################################
 # DEFINE "label getters"; typically good enough to find misclassifications
@@ -705,7 +706,7 @@ class_names = {
     
                     "FLAIR": ['', 'neutral', 'calm', 'happy', 'sad', 'angry', 'fearful', 'disgust', 'surprised'],
     
-                    "GAO_LSTM": ["angry", "fear", "happy", "neutral", "sad", "surprise"],
+#                    "GAO_LSTM": ["angry", "fear", "happy", "neutral", "sad", "surprise"],
     
                     "CNNLSTM": ['neutral', 'calm', 'happy', 'sad', 'angry', 'fearful', 'disgust', 'surprised'],
 
@@ -715,7 +716,7 @@ feature_extractors = { "SIMPLE_PURE": wrapped_simple,
                        "SIMPLE_RECORDED": wrapped_simple, 
                        "SEA": wrapped_sea, 
                        "FLAIR": wrapped_flair,
-                       "GAO_LSTM": extract_features_gao_lstm,
+#                       "GAO_LSTM": extract_features_gao_lstm,
                        "CNNLSTM": wrapped_cnnlstm
                      }
 
@@ -723,7 +724,7 @@ label_getters = {"SIMPLE_PURE": get_class_labels_simple,
                  "SIMPLE_RECORDED": get_class_labels_simple, 
                  "SEA": get_class_labels_sea, 
                  "FLAIR": get_class_labels_flair,
-                 "GAO_LSTM": get_class_labels_gao_lstm
+#                 "GAO_LSTM": get_class_labels_gao_lstm
                 }     
 
 
