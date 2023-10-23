@@ -1,7 +1,7 @@
 # DARE-GP
 Develop universal adversarial perturbations that protect user emotion in speech without disrupting transcription. 
 
-This code uses the RAVDESS and TESS datasets. 
+This code uses the RAVDESS and TESS datasets. These datasets need to be converted to our naming convention. These files are currently included in the distribution. 
 
 This code requires very specific library versions (specifically for the vosk/kaldi transcription code). See the docker/Dockerfile file for specifics. 
 
