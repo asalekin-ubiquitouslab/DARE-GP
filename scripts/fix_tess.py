@@ -21,8 +21,8 @@ import transcription
 
 directory_to_extract_to = '/tmp/orig_tess'
 
-#with zipfile.ZipFile(source_file, 'r') as zip_ref:
-#    zip_ref.extractall(directory_to_extract_to)
+with zipfile.ZipFile(source_file, 'r') as zip_ref:
+    zip_ref.extractall(directory_to_extract_to)
 
 speaker_dirs = os.listdir(os.path.join(directory_to_extract_to, 'TESS Toronto emotional speech set data'))
 
