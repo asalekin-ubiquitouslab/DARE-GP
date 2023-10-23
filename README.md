@@ -1,7 +1,7 @@
 # DARE-GP
 Develop universal adversarial perturbations that protect user emotion in speech without disrupting transcription. 
 
-This code uses the RAVDESS and TESS datasets. 
+This code uses the RAVDESS (https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio) and TESS (https://www.kaggle.com/datasets/ejlok1/toronto-emotional-speech-set-tess) datasets. Use the fix_ravdess.py and fix_tess.py scripts to rename these to the correct naming convention.
 
 This code requires very specific library versions (specifically for the vosk/kaldi transcription code). See the docker/Dockerfile file for specifics. 
 
