@@ -3,6 +3,8 @@ Develop universal adversarial perturbations that protect user emotion in speech 
 
 This code uses the RAVDESS and TESS datasets. 
 
+This code requires very specific library versions (specifically for the vosk/kaldi transcription code). See the docker/Dockerfile file for specifics. 
+
 To cite this work, please include this reference:
 
 @article{testa2023privacy,
